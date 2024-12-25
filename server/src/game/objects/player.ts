@@ -53,7 +53,7 @@ export class PlayerBarn {
     livingPlayers: Player[] = [];
     newPlayers: Player[] = [];
     deletedPlayers: number[] = [];
-    groupIdAllocator = new IDAllocator(8);
+    groupIdAllocator = new IDAllocator(10);
     aliveCountDirty = false;
 
     socketIdToPlayer = new Map<string, Player>();

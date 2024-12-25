@@ -45,7 +45,7 @@ export const Island: MapDef = {
         },
     },
     gameMode: {
-        maxPlayers: 120,
+        maxPlayers: 630,
         killLeaderEnabled: true,
     },
     gameConfig: {
@@ -144,7 +144,7 @@ export const Island: MapDef = {
         tier_medical: [
             { name: "bandage", count: 5, weight: 16 },
             { name: "healthkit", count: 1, weight: 4 },
-            { name: "soda", count: 1, weight: 15 },
+            { name: "soda", count: 2, weight: 15 },
             { name: "painkiller", count: 1, weight: 5 },
         ],
         tier_throwables: [
@@ -153,10 +153,10 @@ export const Island: MapDef = {
             { name: "mirv", count: 2, weight: 0.05 },
         ],
         tier_ammo: [
-            { name: "9mm", count: 60, weight: 3 },
-            { name: "762mm", count: 60, weight: 3 },
-            { name: "556mm", count: 60, weight: 3 },
-            { name: "12gauge", count: 10, weight: 3 },
+            { name: "9mm", count: 90, weight: 3 },
+            { name: "762mm", count: 90, weight: 3 },
+            { name: "556mm", count: 90, weight: 3 },
+            { name: "12gauge", count: 18, weight: 3 },
         ],
         tier_ammo_crate: [
             { name: "9mm", count: 90, weight: 3 },
@@ -245,6 +245,7 @@ export const Island: MapDef = {
             { name: "groza", count: 1, weight: 0.8 },
             { name: "scout_elite", count: 1, weight: 2 },
             { name: "vss", count: 1, weight: 2 }, // !
+            
         ],
         tier_police: [
             { name: "scar", count: 1, weight: 0.5 },
@@ -513,7 +514,7 @@ export const Island: MapDef = {
             xlarge: "",
         },
         riverCabins: {
-            cabin_01: 6,
+            cabin_01: 3,
         },
         customSpawnRules: {
             locationSpawns: [
@@ -528,50 +529,50 @@ export const Island: MapDef = {
         },
         densitySpawns: [
             {
-                stone_01: 20,
-                barrel_01: 40,
-                silo_01: 3,
-                crate_01: 35,
-                crate_02: 20,
-                crate_03: 10,
-                bush_01: 9,
-                cache_06: 12,
+                stone_01: 10,
+                barrel_01: 8,
+                silo_01: 2,
+                crate_01: 30,
+                crate_02: 6,
+                crate_03: 4,
+                bush_01: 8,
+                cache_06: 2,
                 tree_01: 30,
-                hedgehog_01: 24,
-                container_01: 1,
-                container_02: 8,
-                container_03: 7,
-                container_04: 4,
+                hedgehog_01: 3,
+                container_01: 4,
+                container_02: 1,
+                container_03: 1,
+                container_04: 6,
                 shack_01: 0,
-                outhouse_01: 0,
+                outhouse_01: 1,
                 loot_tier_1: 24,
-                loot_tier_beach: 4,
+                loot_tier_beach: 12,
             },
         ],
         fixedSpawns: [
             {
                 // small is spawn count for solos and duos, large is spawn count for squads
                 warehouse_01: 2,
-                house_red_01: { small: 3, large: 4 },
+                house_red_01: { small: 2, large: 4 },
                 house_red_02: { small: 3, large: 4 },
                 barn_01: { small: 1, large: 3 },
                 barn_02: 1,
-                hut_01: 3,
-                hut_02: 1, // spas hut
-                hut_03: 1, // scout hut
+                hut_01: 2,
+                hut_02: 0, // spas hut
+                hut_03: 0, // scout hut
                 shack_03a: 2,
                 shack_03b: { small: 2, large: 3 },
-                greenhouse_01: 1,
+                greenhouse_01: 2,
                 cache_01: 1,
-                cache_02: 1, // mosin tree
-                cache_07: 1,
+                cache_02: 2, // mosin tree
+                cache_07: 0,
                 bunker_structure_01: { odds: 0.05 },
-                bunker_structure_02: 1,
-                bunker_structure_03: 1,
+                bunker_structure_02: 2,
+                bunker_structure_03: 0,
                 bunker_structure_04: 1,
-                bunker_structure_05: 1,
+                bunker_structure_05: 0,
                 warehouse_complex_01: 1,
-                chest_01: 1,
+                chest_01: 3,
                 chest_03: { odds: 0.2 },
                 mil_crate_02: { odds: 0.25 },
                 tree_02: 3,
@@ -585,12 +586,12 @@ export const Island: MapDef = {
         ],
         randomSpawns: [
             {
-                spawns: ["mansion_structure_01", "police_01", "bank_01"],
+                spawns: ["mansion_structure_01", "bank_01"],
                 choose: 2,
             },
         ],
         spawnReplacements: [{}],
-        importantSpawns: ["club_complex_01"],
+        importantSpawns: ["club_complex_01","police_01"],
     },
     /* STRIP_FROM_PROD_CLIENT:END */
 };
