@@ -1,4 +1,5 @@
 import type { Vec2 } from "../utils/v2";
+import { Island } from "./maps/islandbattleDefs";
 import { Main } from "./maps/baseDefs";
 import { Cobalt } from "./maps/cobaltDefs";
 import { Desert } from "./maps/desertDefs";
@@ -17,6 +18,7 @@ import { WoodsSpring } from "./maps/woodsSpringDefs";
 import { WoodsSummer } from "./maps/woodsSummerDefs";
 
 export const MapDefs = {
+    island: Island,
     main: Main,
     main_spring: MainSpring,
     main_summer: MainSummer,
