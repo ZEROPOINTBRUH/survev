@@ -35,8 +35,8 @@ export const Config = {
 
     modes: [
         { mapName: "island", teamMode: TeamMode.Solo, enabled: true },
-        { mapName: "island", teamMode: TeamMode.Duo, enabled: true },
-        { mapName: "island", teamMode: TeamMode.Squad, enabled: true },
+        { mapName: "island", teamMode: TeamMode.Duo, enabled: false },
+        { mapName: "island", teamMode: TeamMode.Squad, enabled: false },
     ],
 
     regions: {},
